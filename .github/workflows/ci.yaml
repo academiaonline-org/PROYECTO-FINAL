@@ -25,4 +25,6 @@ jobs:
               docker logs mysql 2>& 1 | grep "ready for connections" && break
             done
           
+          docker logs mysql 2>& 1 | grep ERROR && exit 100
+          
           docker logs mysql
