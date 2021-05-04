@@ -22,14 +22,14 @@ CREATE TABLE pique_alumnos (
  DNI CHAR(10) ,
  Nombre VARCHAR(20),
  Apellidos VARCHAR(20),
- PRIMARY KEY (ID_ALUMNO)
+ PRIMARY KEY (ID_Alumno)
 );
 
 CREATE TABLE pique_asignaturas (
- ID_Asignatura INT;
+ ID_Asignatura INT,
  Codigo CHAR(10),
  Asignatura VARCHAR(100),
- PRIMARY KEY (Codigo)
+ PRIMARY KEY (ID_Asignatura)
 );
 
 CREATE TABLE pique_calificaciones (
