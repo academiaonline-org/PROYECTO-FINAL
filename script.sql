@@ -3,19 +3,19 @@ CREATE DATABASE davidpiquemarin;
 
 USE davidpiquemarin;
 
-CREATE ROLE ‘designer’, ‘programmer’, ‘final_user’;
+CREATE ROLE 'designer', 'programmer', 'final_user';
 
-GRANT CREATE, ALTER, DROP, TRUNCATE, SELECT, INSERT, UPDATE, DELETE ON davidpiquemarin.* TO ‘designer’;
-GRANT SELECT, INSERT, UPDATE, DELETE ON davidpiquemarin.* TO ‘programmer’;
-GRANT SELECT ON davidpiquemarin.* TO ‘final_user’;
+GRANT CREATE, ALTER, DROP, TRUNCATE, SELECT, INSERT, UPDATE, DELETE ON davidpiquemarin.* TO 'designer';
+GRANT SELECT, INSERT, UPDATE, DELETE ON davidpiquemarin.* TO 'programmer';
+GRANT SELECT ON davidpiquemarin.* TO 'final_user';
 
-CREATE USER 'david'@'localhost' IDENTIFIED BY ‘123456789’;
-CREATE USER 'pique'@'localhost' IDENTIFIED BY ‘123456789’;
-CREATE USER 'marin'@'localhost' IDENTIFIED BY ‘123456789’;
+CREATE USER 'david'@'localhost' IDENTIFIED BY '123456789';
+CREATE USER 'pique'@'localhost' IDENTIFIED BY '123456789';
+CREATE USER 'marin'@'localhost' IDENTIFIED BY '123456789';
 
-GRANT ‘designer’ TO ‘david’@‘localhost';
-GRANT ‘programmer’ TO ‘pique’@‘localhost';
-GRANT ‘final_user’ TO ‘marin’@‘localhost';
+GRANT 'designer' TO 'david'@'localhost';
+GRANT 'programmer' TO 'pique'@'localhost';
+GRANT 'final_user' TO 'marin'@'localhost';
 
 CREATE TABLE pique_alumnos (
  Codigo_Postal INT,
