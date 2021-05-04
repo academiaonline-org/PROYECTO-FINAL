@@ -21,10 +21,13 @@ jobs:
           
           while true
             do
-              sleep 1
+              sleep 10
               docker logs mysql 2>& 1 | grep "ready for connections" && break
             done
           
           docker logs mysql 2>& 1 | grep ERROR && exit 100
           
           docker logs mysql
+
+          docker exec mysql sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD" -e "select * from pique_alumnos" davidpiquemarin'
+          
