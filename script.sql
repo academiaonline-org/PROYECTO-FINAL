@@ -35,6 +35,8 @@ CREATE TABLE pique_asignaturas (
 CREATE TABLE pique_calificaciones (
  Nota  INT,
  ID_Calificacion INT,
+ ID_Alumno INT,
+ ID_Asignatura INT,
  FOREIGN KEY (ID_Alumno) REFERENCES pique_alumnos(ID_Alumno),
  FOREIGN KEY (ID_Asignatura) REFERENCES pique_asignaturas(ID_Asignatura), 
  PRIMARY KEY (ID_Calificacion)
