@@ -17,7 +17,7 @@ jobs:
         
           set -x
           
-          docker run --detach --env MYSQL_ROOT_PASSWORD=password --name mysql --volume ${PWD}/script.sql:/docker-entrypoint-initdb.d/script.sql:ro mysql:alpine
+          docker run --detach --env MYSQL_ROOT_PASSWORD=password --name mysql --volume ${PWD}/script.sql:/docker-entrypoint-initdb.d/script.sql:ro mysql:latest
           
           sleep 100
           docker logs mysql
