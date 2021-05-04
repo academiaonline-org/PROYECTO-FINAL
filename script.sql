@@ -18,13 +18,15 @@ GRANT 'programmer' TO 'pique'@'localhost';
 GRANT 'final_user' TO 'marin'@'localhost';
 
 CREATE TABLE pique_alumnos (
+ ID_Alumno INT,
  DNI CHAR(10) ,
  Nombre VARCHAR(20),
  Apellidos VARCHAR(20),
- PRIMARY KEY (DNI)
+ PRIMARY KEY (ID_ALUMNO)
 );
 
 CREATE TABLE pique_asignaturas (
+ ID_Asignatura INT;
  Codigo CHAR(10),
  Asignatura VARCHAR(100),
  PRIMARY KEY (Codigo)
