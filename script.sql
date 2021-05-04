@@ -19,7 +19,7 @@ GRANT 'final_user' TO 'marin'@'localhost';
 
 CREATE TABLE pique_alumnos (
  ID_Alumno INT,
- DNI CHAR(10) ,
+ DNI CHAR(10),
  Nombre VARCHAR(20),
  Apellidos VARCHAR(20),
  PRIMARY KEY (ID_Alumno)
