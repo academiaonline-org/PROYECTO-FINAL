@@ -1,3 +1,6 @@
+
+CREATE DATABASE davidpiquemarin;
+
 USE davidpiquemarin;
 
 CREATE ROLE ‘designer’, ‘programmer’, ‘final_user’;
