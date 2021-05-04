@@ -5,7 +5,7 @@ USE davidpiquemarin;
 
 CREATE ROLE 'designer', 'programmer', 'final_user';
 
-GRANT CREATE, ALTER, DROP, TRUNCATE, SELECT, INSERT, UPDATE, DELETE ON davidpiquemarin.* TO 'designer';
+GRANT CREATE, ALTER, DROP, SELECT, INSERT, UPDATE, DELETE ON davidpiquemarin.* TO 'designer';
 GRANT SELECT, INSERT, UPDATE, DELETE ON davidpiquemarin.* TO 'programmer';
 GRANT SELECT ON davidpiquemarin.* TO 'final_user';
 
