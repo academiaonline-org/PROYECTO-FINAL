@@ -21,7 +21,7 @@ jobs:
           
           while true
             do
-              sleep 10
+              sleep 1
               docker logs mysql 2>& 1 | grep "ready for connections" && break
             done
           
